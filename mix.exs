@@ -28,7 +28,7 @@ defmodule Addict.Mixfile do
      {:phoenix, "~> 1.2"},
      {:ecto, "~> 1.1"},
      {:comeonin, "~> 2.1" },
-     {:mailgun, "~> 0.1"},
+     {:mailgun, github: "chrismccord/mailgun"},
      {:mock, "~> 0.1.3", only: :test},
      {:postgrex, ">= 0.0.0", only: :test},
      {:earmark, "~> 0.2", only: :dev},

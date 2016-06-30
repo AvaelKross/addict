@@ -8,7 +8,7 @@
   "ecto": {:hex, :ecto, "1.1.4", "a97d597de8f7299d72c14a9194bdf452ad3660f0c10a8e603b9a0d04b97ec326", [:mix], [{:sbroker, "~> 0.7", [hex: :sbroker, optional: true]}, {:postgrex, "~> 0.11.0", [hex: :postgrex, optional: true]}, {:poolboy, "~> 1.4", [hex: :poolboy, optional: false]}, {:poison, "~> 1.0", [hex: :poison, optional: true]}, {:mariaex, "~> 0.5 or ~> 0.6", [hex: :mariaex, optional: true]}, {:decimal, "~> 1.0", [hex: :decimal, optional: false]}]},
   "ecto_fixtures": {:hex, :ecto_fixtures, "0.0.2"},
   "ex_doc": {:hex, :ex_doc, "0.11.4", "a064bdb720594c3745b94709b17ffb834fd858b4e0c1f48f37c0d92700759e02", [:mix], [{:earmark, "~> 0.1.17 or ~> 0.2", [hex: :earmark, optional: true]}]},
-  "mailgun": {:hex, :mailgun, "0.1.2", "37c1306675cf27a66a13dea3c9d479da2a990f0aed296b5addbd0b07529b667d", [:mix], [{:poison, "~> 1.4", [hex: :poison, optional: false]}]},
+  "mailgun": {:git, "https://github.com/chrismccord/mailgun.git", "ace116f37a86b3b11cecad6f37c4599f4552452b", []},
   "meck": {:hex, :meck, "0.8.4", "59ca1cd971372aa223138efcf9b29475bde299e1953046a0c727184790ab1520", [:rebar, :make], []},
   "mock": {:hex, :mock, "0.1.3", "657937b03f88fce89b3f7d6becc9f1ec1ac19c71081aeb32117db9bc4d9b3980", [:mix], [{:meck, "~> 0.8.2", [hex: :meck, optional: false]}]},
   "phoenix": {:hex, :phoenix, "1.2.0", "1bdeb99c254f4c534cdf98fd201dede682297ccc62fcac5d57a2627c3b6681fb", [:mix], [{:poison, "~> 1.5 or ~> 2.0", [hex: :poison, optional: false]}, {:phoenix_pubsub, "~> 1.0", [hex: :phoenix_pubsub, optional: false]}, {:plug, "~> 1.1", [hex: :plug, optional: false]}, {:cowboy, "~> 1.0", [hex: :cowboy, optional: true]}]},
