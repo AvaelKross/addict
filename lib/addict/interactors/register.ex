@@ -10,7 +10,7 @@ defmodule Addict.Interactors.Register do
   def call(user_params, configs \\ Addict.Configs) do
     {valid, errors} = ValidateUserForRegistration.call(user_params)
     user_params = InjectHash.call user_params
-    {valid, errors} = configs.user_schema.addict_validate.({valid, errors}, user_params)
+    {valid, errors} = configs.user_schema.addict_validate({valid, errors}, user_params)
 
     case {valid, errors} do
        {:ok, _} -> do_register(user_params, configs)
