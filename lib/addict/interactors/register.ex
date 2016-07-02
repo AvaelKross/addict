@@ -8,11 +8,9 @@ defmodule Addict.Interactors.Register do
   Returns `{:ok, user}` or `{:error, [errors]}`
   """
   def call(user_params, configs \\ Addict.Configs) do
-    extra_validation = configs.user_schema.addict_validate/2 || fn (a,_) -> a end
-
     {valid, errors} = ValidateUserForRegistration.call(user_params)
     user_params = InjectHash.call user_params
-    {valid, errors} = extra_validation.({valid, errors}, user_params)
+    {valid, errors} = configs.user_schema.addict_validate.({valid, errors}, user_params)
 
     case {valid, errors} do
        {:ok, _} -> do_register(user_params, configs)
